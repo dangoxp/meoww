@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pacifico', cursive;
+      background: url('/images/background.webp') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px; 
+      margin: 100px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #FBB8AC;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #FBB8AC;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #FBB8AC;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #333;
+      transition: border-color 0.3s ease;
+      width: calc(100% - 22px); 
+    }
+
+    input:focus {
+      border-color: #FEDBD0;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #FEDBD0;
+      color: #333;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #FBB8AC;
+    }
+
+    a {
+      color: #FBB8AC;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #FEDBD0;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.container').addClass('animated');
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>
+      Already have an account? <a href="signin.html">Sign in here</a>.
+    </p>
+  </div>
+</body>
+</html>

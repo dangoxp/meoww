@@ -1,0 +1,246 @@
+body {
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); 
+    background-image: url('/images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(254, 189, 208, 0.8); 
+    padding: 20px 0;
+    border-bottom: 2px solid #FBB8AC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    margin: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FBB8AC; 
+}
+
+
+section {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+section#about img {
+    border-radius: 50%;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.cat-card, .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px; 
+    border: 5px solid #FEDBD0;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease;
+}
+
+.cat-card:hover, .menu-item:hover {
+    transform: scale(1.03);
+}
+
+.cat-card img, .menu-item img {
+    width: 80%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+.cat-details, .menu-details {
+    flex-grow: 1;
+}
+
+.cat-details h3, .menu-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #FBB8AC; 
+}
+
+.cat-details p, .menu-details p {
+    margin: 5px 0;
+    color: #444; 
+}
+
+footer {
+    background-color: rgba(251, 184, 172, 0.8); 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #FEDBD0;
+}
+
+.cat-gallery, .menu-items {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.cat-card, .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid #FEDBD0;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #FBB8AC;
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group.button {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+button[type="submit"] {
+    background-color: #FBB8AC;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+.about-section {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333; 
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+.image-container {
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6b6b; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #ff4d4d; 
+}

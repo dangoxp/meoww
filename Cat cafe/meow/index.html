@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neko Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="/images/logo.gif" alt="Neko Cafe Logo" class="logo">
+            <h1 class="brand-name">Neko Cafe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cats">Our Cats</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="signin.html" target="_self">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="about-section scale-on-hover">>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-title">Welcome to Neko Cafe!</h2>
+                    <p class="section-description">Step into a world where the aroma of freshly brewed coffee mingles with the soft purrs of content felines. Nestled in the heart of Santa Monica, Neko Cafe isn't just a coffeehouse; it's a sanctuary for both humans and cats alike.</p>
+
+                    <a href="signup.html" class="btn btn-primary">Become a customer !</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Explore our selection of coffees, teas, and cat-themed pastries.</p>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="/images/coffee.webp" alt="Coffee">
+                <div class="menu-details">
+                    <h3>Coffee</h3>
+                    <p>Start your day with our freshly brewed coffee.</p>
+                    <p>Price: 7 DH</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/images/tea.png" alt="Tea">
+                <div class="menu-details">
+                    <h3>Tea</h3>
+                    <p>Relax with a cup of our finest tea blends.</p>
+                    <p>Price: 5 DH</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/images/pasteries.png" alt="Pastry">
+                <div class="menu-details">
+                    <h3>Cat-Themed Pastry</h3>
+                    <p>Indulge in our delicious cat-shaped pastries.</p>
+                    <p>Price: 3 DH</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cats">
+        <h2>Meet Our Star Cats</h2>
+        <p>Get to know our friendly feline hosts who can't wait to meet you!</p>
+        <div class="cat-gallery">
+            <div class="cat-card">
+                <img src="/images/susu.png" alt="Cute cat">
+                <div class="cat-details">
+                    <h3>Pumpkin</h3>
+                    <p>Age: 3 years</p>
+                    <p>Favorite Toy: Yarnball</p>
+                </div>
+            </div>
+            <div class="cat-card">
+                <img src="/images/Butter.png" alt="Adorable cat">
+                <div class="cat-details">
+                    <h3>The Holy Trinity</h3>
+                    <p>Age: 2 years</p>
+                    <p>Favorite Treat: Tuna flakes</p>
+                </div>
+            </div>
+            <div class="cat-card">
+                <img src="/images/susu2.png" alt="Playful cat">
+                <div class="cat-details">
+                    <h3>Luna</h3>
+                    <p>Age: 4 years</p>
+                    <p>Favorite Activity: Sleep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="visit">
+        <h2>Visit Us</h2>
+        <p>Find us in Santa Monica, Mohammedia open from 9 AM to 9 PM.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out through our contact form or follow us on social media.</p>
+    </section>
+    <form action="/submit-form-endpoint" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div class="form-group button">
+                <button type="submit">Send</button>
+            </div>
+            
+</div>
+
+    </form>
+    
+    <footer>
+        <p>&copy; 2024 Neko Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
